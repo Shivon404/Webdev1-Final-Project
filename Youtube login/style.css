@@ -1,0 +1,108 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: #0f0f0f;
+  font-family: arial, sans-serif;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.yt-logo {
+  width: 400px;
+  left: 100px;
+  padding-left: 30px;
+  margin: -30px;
+  padding-bottom: 20px;
+}
+
+.title-box {
+  width: 500px;
+}
+
+.form-box {
+  width: 360px;
+  padding: 15px;
+  text-align: left;
+  border-radius: 10px;
+  background: rgb(29, 29, 29);
+  margin-left: 60px;
+  
+}
+
+.form-box input {
+  width: calc(100%);
+  margin-bottom: 15px;
+  padding: 15px;
+  font-size: 16px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background-color: rgb(65, 65, 65);
+}
+
+.form-box input:focus {
+  box-shadow: 0px 0px 1px 1px rgb(22, 111, 229);
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-box button {
+  width: calc(50% - 5px);
+  margin-bottom: 15px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 5px;
+  border: none;
+  padding: 13px 0;
+  cursor: pointer;
+  background: #e71313;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.checkbox-container input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.form-box a {
+  color: #e71313;
+  font-size: 14px;
+  text-decoration: none;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.form-box a:hover {
+  text-decoration: underline;
+}
+
+.form-box hr {
+  border: 1px solid #dadde1;
+  margin-bottom: 15px;
+}
+
+
+.idk{
+  width: 10px;
+}
+
+input{
+  color: white;
+}
