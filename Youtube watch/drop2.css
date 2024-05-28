@@ -1,0 +1,18 @@
+
+.dropdown-content-create {
+  display: none;
+  position: absolute;
+  background-color: #222222;
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.c-d {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+

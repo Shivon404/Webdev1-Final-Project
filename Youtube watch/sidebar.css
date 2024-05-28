@@ -1,0 +1,19 @@
+.left-sidebar{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 58px;
+  background-color: #0f0f0f;
+  width: 98px;
+}
+
+.right-sidebar{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  top: 58px;
+  background-color: #0f0f0f;
+  width: 98px;
+  z-index: 2;
+}
+

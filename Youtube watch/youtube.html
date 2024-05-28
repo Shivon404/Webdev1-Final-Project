@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dancing Coackroach on Stage</title>
+    <link rel="stylesheet" href="bg.css">
+    <link rel="stylesheet" href="description.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="hover.css">
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="drop.css">
+    <link rel="stylesheet" href="drop2.css">
+    <link rel="stylesheet" href="suggestion.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body class="youtube-bg">
+
+    <div class="left-sidebar"></div>
+    <div class="right-sidebar"></div>
+    <div class="container">
+      <div class="video-area">
+        <div style="position: relative;">
+          <video class="main-vid video-hover" id="video">
+            <source  src="Dancing Cockroach On Stage.mp4" type="video/mp4" controls>
+            
+          </video>
+
+          <progress class="prog" id="progressBar" max="100" value="0" class="progressBar" style="position: absolute; bottom: 0; left: 0; width: 100%;"></progress>
+
+
+          <div class="video-buttons">
+            <i onclick="playPauseToggle()" id="playPauseIcon" class="fa fa-play" style="font-size:22px; color: white;"></i>
+            <i class="fa fa-step-forward" style="font-size:22px; color: white; margin-left: 20px;"></i>
+            <i class="fa fa-volume-up" style="font-size:22px; color: white; margin-left: 20px;"></i>
+            <i class="fa fa-cc" style="font-size:22px; color: white; margin-left: 365px;"></i>
+            <i class="fa fa-gear" style="font-size:22px; color: white; margin-left: 20px;"></i>
+            <i class="fa fa-square-o" style="font-size:22px; color: white; margin-left: 20px;"></i>
+            <i class='fa fa-arrows-alt' style='font-size:22px; color: white; margin-left: 20px;'></i>
+          </div>
+          
+        </div>
+        <p class="vid-title">Dancing Cockroach on Stage</p>
+  
+        <div class="yt-info">
+          <img class="vid-user" src="b85f3a28fd572685b0dab45537113294.jpg">
+    
+          <div class="vid-info">
+            <div class="user-info">
+              <p class="username">t i n a t a n g i</p>
+              <p class="subs">45K subscribers</p>
+            </div>
+            
+    
+            <button class="sub">Subscribe</button>
+            
+            <button class="like-button"><img src="like.png" class="button-icon"></button>
+            <div class="vertical-line"></div>
+            
+            <button class="dislike-button"><img src="dislike.png" class="button-icon"></button>
+            <button class="share-button"><i class="fa fa-share" style="font-size:16px"></i> Share</button>
+            <button class="dl-button"><i class="fa fa-download" style="font-size:16px"></i>  Download</button>
+            <button class="menu-button"><i class="fa fa-ellipsis-h" class="button-icon" style="font-size:16px"></i></button>
+          </div>
+        </div>
+        
+        <div class="description">
+          <p style="font-weight: bold;">145K views  7 months ago</p>
+          <p>Cockroach on stage performing their latest hit</p>
+          <br>
+          <p>Support the channel  ...more</p>
+        </div>
+
+        <p style="font-size: 20px; font-weight: bold; color: white; margin-left: 10px;" id="commentCount">7 Comments</p>
+
+        <div class="usercomment">
+          <div class="userprofile">
+            <img src="profilelogo.png" style="width: 45px; border-radius: 50%;">
+          </div>
+          <div class="u-comment">
+            <div class="u-top">
+              <input style="background-color: transparent; border: none; border-bottom: 1px solid rgb(90, 90, 90); color: white;" type="text" id="commentInput" placeholder="Add a comment...">
+            </div>
+            <div class="u-bottom">
+              <button class="u-can" id="cancelButton" style="display: none;">Cancel</button>
+              <button style="background-color: rgb(0, 162, 255); border: none; width: 100px; height: 30px; font-size: 15px; border-radius: 20px; margin-top: 10px; cursor: pointer; font-weight: bold; display: none;" id="commentButton">Comment</button>
+            </div>
+          </div>
+        </div>
+        
+        
+        
+
+        <div class="commentsec" id="commentSection">
+          <div class="commentcontainer">
+            <div class="commentprofile">
+              <img class="commentuserprofile" src="channels4_profile(1).png">
+            </div>
+            <div class="c-comment">
+              <div class="commentname">
+                <div class="commentuser">
+                  <div class="user-time-container"> 
+                    <p style="font-weight: bold;" class="c-user">@davidthomas9190</p>
+                    <p style="color: rgb(94, 94, 94); margin-left: 15px; font-size: 13px;" class="c-time">2 months ago</p>
+                  </div>
+                </div>
+              </div>
+              <div class="commentinfo">
+                <p class="c-info">Less than one week of self-isolation and just look at the crap I'm watching </p>
+              </div>
+              <div class="like-dislike">
+                <img style="width: 20px;" src="Untitled design (21).png">
+                <p>25</p>
+                <img style="width: 20px;" src="Untitled design (22).png">
+                <p style="font-weight: bold; font-size: 13px; margin-left: 20px;">Reply</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="commentsec" id="commentSection">
+          <div class="commentcontainer">
+            <div class="commentprofile">
+              <img class="commentuserprofile" src="channels4_profile(3).png">
+            </div>
+            <div class="c-comment">
+              <div class="commentname">
+                <div class="commentuser">
+                  <div class="user-time-container"> 
+                    <p style="font-weight: bold;" class="c-user">@vitsobotka6268</p>
+                    <p style="color: rgb(94, 94, 94); margin-left: 15px; font-size: 13px;" class="c-time">2 months ago</p>
+                  </div>
+                </div>
+              </div>
+              <div class="commentinfo">
+                <p class="c-info">Franz Kafka readers reading Metamorphosis like</p>
+              </div>
+              <div class="like-dislike">
+                <img style="width: 20px;" src="Untitled design (21).png">
+                <p>0</p>
+                <img style="width: 20px;" src="Untitled design (22).png">
+                <p style="font-weight: bold; font-size: 13px; margin-left: 20px;">Reply</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="commentsec" id="commentSection">
+          <div class="commentcontainer">
+            <div class="commentprofile">
+              <img class="commentuserprofile" src="channels4_profile(4).png">
+            </div>
+            <div class="c-comment">
+              <div class="commentname">
+                <div class="commentuser">
+                  <div class="user-time-container"> 
+                    <p style="font-weight: bold;" class="c-user">@snakekiller110</p>
+                    <p style="color: rgb(94, 94, 94); margin-left: 15px; font-size: 13px;" class="c-time">4 months ago</p>
+                  </div>
+                </div>
+              </div>
+              <div class="commentinfo">
+                <p class="c-info">my god peak comedy</p>
+              </div>
+              <div class="like-dislike">
+                <img style="width: 20px;" src="Untitled design (21).png">
+                <p>3</p>
+                <img style="width: 20px;" src="Untitled design (22).png">
+                <p style="font-weight: bold; font-size: 13px; margin-left: 20px;">Reply</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="commentsec" id="commentSection">
+          <div class="commentcontainer">
+            <div class="commentprofile">
+              <img class="commentuserprofile" src="channels4_profile(6).png">
+            </div>
+            <div class="c-comment">
+              <div class="commentname">
+                <div class="commentuser">
+                  <div class="user-time-container"> 
+                    <p style="font-weight: bold;" class="c-user">@loadcant6751</p>
+                    <p style="color: rgb(94, 94, 94); margin-left: 15px; font-size: 13px;" class="c-time">3 months ago</p>
+                  </div>
+                </div>
+              </div>
+              <div class="commentinfo">
+                <p class="c-info">wow good editing</p>
+              </div>
+              <div class="like-dislike">
+                <img style="width: 20px;" src="Untitled design (21).png">
+                <p>1</p>
+                <img style="width: 20px;" src="Untitled design (22).png">
+                <p style="font-weight: bold; font-size: 13px; margin-left: 20px;">Reply</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="commentsec" id="commentSection">
+          <div class="commentcontainer">
+            <div class="commentprofile">
+              <img class="commentuserprofile" src="channels4_profile(7).png">
+            </div>
+            <div class="c-comment">
+              <div class="commentname">
+                <div class="commentuser">
+                  <div class="user-time-container"> 
+                    <p style="font-weight: bold;" class="c-user">@DirtyDeedsDoneDirtCHeapD4C</p>
+                    <p style="color: rgb(94, 94, 94); margin-left: 15px; font-size: 13px;" class="c-time">7 months ago</p>
+                  </div>
+                </div>
+              </div>
+              <div class="commentinfo">
+                <p class="c-info">What's the original? both concert and cockroach video</p>
+              </div>
+              <div class="like-dislike">
+                <img style="width: 20px;" src="Untitled design (21).png">
+                <p>2</p>
+                <img style="width: 20px;" src="Untitled design (22).png">
+                <p style="font-weight: bold; font-size: 13px; margin-left: 20px;">Reply</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="commentsec" id="commentSection">
+          <div class="commentcontainer">
+            <div class="commentprofile">
+              <img class="commentuserprofile" src="channels4_profile(8).png">
+            </div>
+            <div class="c-comment">
+              <div class="commentname">
+                <div class="commentuser">
+                  <div class="user-time-container"> 
+                    <p style="font-weight: bold;" class="c-user">@blissfullsakura1776</p>
+                    <p style="color: rgb(94, 94, 94); margin-left: 15px; font-size: 13px;" class="c-time">6 months ago</p>
+                  </div>
+                </div>
+              </div>
+              <div class="commentinfo">
+                <p class="c-info">Deez</p>
+              </div>
+              <div class="like-dislike">
+                <img style="width: 20px;" src="Untitled design (21).png">
+                <p>0</p>
+                <img style="width: 20px;" src="Untitled design (22).png">
+                <p style="font-weight: bold; font-size: 13px; margin-left: 20px;">Reply</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="commentsec" id="commentSection">
+          <div class="commentcontainer">
+            <div class="commentprofile">
+              <img class="commentuserprofile" src="channels4_profile(9).png">
+            </div>
+            <div class="c-comment">
+              <div class="commentname">
+                <div class="commentuser">
+                  <div class="user-time-container"> 
+                    <p style="font-weight: bold;" class="c-user">@jaythepotatoeyt</p>
+                    <p style="color: rgb(94, 94, 94); margin-left: 15px; font-size: 13px;" class="c-time">7 months ago</p>
+                  </div>
+                </div>
+              </div>
+              <div class="commentinfo">
+                <p class="c-info">The cockroach is the G</p>
+              </div>
+              <div class="like-dislike">
+                <img style="width: 20px;" src="Untitled design (21).png">
+                <p>0</p>
+                <img style="width: 20px;" src="Untitled design (22).png">
+                <p style="font-weight: bold; font-size: 13px; margin-left: 20px;">Reply</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+        
+
+
+
+          
+        
+      </div>
+      <div class="suggestions-area">
+        <div class="scroll-lists">
+          <button class="all">All</button>
+          <button class="from">From Youtube User</button>
+          <button class="playlist">Playlists</button>
+          <button class="side">></button>
+        </div>
+
+        <div class="vid-suggest">
+            <a href="https://youtu.be/59CopbkRP04?si=dBEuOFA4jVadoDuq">
+              <div class="vid-container"> 
+                <img class="vid" src="laufey.webp">
+                <div class="vid-time">31:50</div>
+                <div class="text-container">
+                  <p class="yt-suggest-title">Laufey PLaylist<br></p>
+                  <p class="yt-suggest-user">Robin</p>
+                  <p class="yt-suggest-views">1.8m views &middot; 3 months ago</p>
+                </div>
+              </div>
+            </a>
+            
+            <a href="https://youtu.be/5LKmvEXbd8E?si=_55oucwKr2WmDUni">
+              <div class="vid-container">
+                <img class="vid" src="valentines.webp">
+                <div class="vid-time">51:52</div>
+                <div class="text-container">
+                  <p class="yt-suggest-title">Valentines Playlist<br></p>
+                  <p class="yt-suggest-user">Endyxow</p>
+                  <p class="yt-suggest-views">7.5K views &middot; 2 years ago</p>
+                </div>
+              </div>
+            </a>
+            
+            <a href="https://youtu.be/_sTFY-RzPfE?si=qk38yx19zTxAYjZq">
+              <div class="vid-container">
+                <img class="vid" src="tv.webp">
+                <div class="vid-time">47:24</div>
+                <div class="text-container">
+                  <p class="yt-suggest-title">TV GIRL _ PLAYLIST<br></p>
+                  <p class="yt-suggest-user">milly</p>
+                  <p class="yt-suggest-views">235K views &middot; 1 month ago</p>
+                </div>
+              </div>
+            </a>
+            
+            <a href="https://youtu.be/trlnA8IlLcs?si=sZtsXB8iSvgHaBV3">
+              <div class="vid-container">
+                <img class="vid" src="alex.webp">
+                <div class="vid-time">49:21</div>
+                <div class="text-container">
+                  <p class="yt-suggest-title">Alex G PLaylist<br></p>
+                  <p class="yt-suggest-user">12gumshoe3</p>
+                  <p class="yt-suggest-views">286K views &middot; 10 months ago</p>
+                </div>
+              </div>
+            </a>
+            
+            <a href="https://youtu.be/nGQTSmywOlg?si=E_PQ4vPNqD0z9duD">
+              <div class="vid-container">
+                <img class="vid" src="bea.webp">
+                <div class="vid-time">33:38</div>
+                <div class="text-container">
+                  <p class="yt-suggest-title">Beabadoobee pLaylist<br></p>
+                  <p class="yt-suggest-user">oreosito</p>
+                  <p class="yt-suggest-views">29K views &middot; 4 weeks ago</p>
+                </div>
+              </div>
+            </a>
+            
+            <!--here-->
+
+            <a >
+              <div class="vid-container">
+                <img class="vid" src="hq720 (1).png">
+                <div class="vid-time">47:23</div>
+                <div class="text-container">
+                  <p class="yt-suggest-title">POV: you're in love<br></p>
+                  <p class="yt-suggest-user">starfire67</p>
+                  <p class="yt-suggest-views">78K views &middot; 1 week ago</p>
+                </div>
+              </div>
+            </a>
+
+            <a >
+              <div class="vid-container">
+                <img class="vid" src="hq720 (2).png">
+                <div class="vid-time">33:38</div>
+                <div class="text-container">
+                  <p class="yt-suggest-title">THIS IS THE DARK SOULS <br> OF COOKING AND I...</p>
+                  <p class="yt-suggest-user">Kubz Scouts</p>
+                  <p class="yt-suggest-views">152K views &middot; 13 hours ago</p>
+                </div>
+              </div>
+            </a>
+
+            <a >
+              <div class="vid-container">
+                <img class="vid" src="hq720 (3).png">
+                <div class="vid-time">2:56</div>
+                <div class="text-container">
+                  <p class="yt-suggest-title">Sabrina Carpenter -<br> Expresso</p>
+                  <p class="yt-suggest-user">Sabrina Carpenter</p>
+                  <p class="yt-suggest-views">9.5M views &middot; 1 month ago</p>
+                </div>
+              </div>
+            </a>
+
+            <a >
+              <div class="vid-container">
+                <img class="vid" src="hq720 (4).png">
+                <div class="vid-time">47:02</div>
+                <div class="text-container">
+                  <p class="yt-suggest-title">lovecore/hopeless romantic<br> playlist<br></p>
+                  <p class="yt-suggest-user">lazydaez</p>
+                  <p class="yt-suggest-views">246K views &middot; 4 weeks ago</p>
+                </div>
+              </div>
+            </a>
+
+            <a >
+              <div class="vid-container">
+                <img class="vid" src="hq720 (5).png">
+                <div class="vid-time">5:16:54</div>
+                <div class="text-container">
+                  <p class="yt-suggest-title">Full Animal Crossing<br> Soundtrack</p>
+                  <p class="yt-suggest-user">clmdwn ambiance</p>
+                  <p class="yt-suggest-views">2.3M views &middot; 4 years ago</p>
+                </div>
+              </div>
+            </a>
+
+            <a >
+              <div class="vid-container">
+                <img class="vid" src="hq720 (6).png">
+                <div class="vid-time">6:05</div>
+                <div class="text-container">
+                  <p class="yt-suggest-title">Bamban Mayor: My biological<br> mother is a Filipino...</p>
+                  <p class="yt-suggest-user">ANC 24/7</p>
+                  <p class="yt-suggest-views">5.7K views &middot; 2 hours ago</p>
+                </div>
+              </div>
+            </a>
+
+            <a href="https://youtu.be/nGQTSmywOlg?si=E_PQ4vPNqD0z9duD">
+              <div class="vid-container">
+                <img class="vid" src="hq720 (7).png">
+                <div class="vid-time">33:26</div>
+                <div class="text-container">
+                  <p class="yt-suggest-title">pov: u start loving yourself</p>
+                  <p class="yt-suggest-user">Julley Nicole</p>
+                  <p class="yt-suggest-views">2.9M views &middot; 1 year ago</p>
+                </div>
+              </div>
+            </a>
+
+            <a href="https://youtu.be/nGQTSmywOlg?si=E_PQ4vPNqD0z9duD">
+              <div class="vid-container">
+                <img class="vid" src="hq720 (8).png">
+                <div class="vid-time">35:43</div>
+                <div class="text-container">
+                  <p class="yt-suggest-title">Sped up songs to<br> vibe/dance to</p>
+                  <p class="yt-suggest-user">Aliven't</p>
+                  <p class="yt-suggest-views">153K views &middot; 2 months ago</p>
+                </div>
+              </div>
+            </a>
+
+            <a href="https://youtu.be/nGQTSmywOlg?si=E_PQ4vPNqD0z9duD">
+              <div class="vid-container">
+                <img class="vid" src="hq720 (9).png">
+                <div class="vid-time">1:04:31</div>
+                <div class="text-container">
+                  <p class="yt-suggest-title">Here With Me</p>
+                  <p class="yt-suggest-user">Slow + Reverb</p>
+                  <p class="yt-suggest-views">49K views &middot; 1 year ago</p>
+                </div>
+              </div>
+            </a>
+
+
+            <a href="https://youtu.be/nGQTSmywOlg?si=E_PQ4vPNqD0z9duD">
+              <div class="vid-container">
+                <img class="vid" src="hqdefault(10).png">
+                <div class="vid-time">35:89</div>
+                <div class="text-container">
+                  <p class="yt-suggest-title">filipino songs to scream<br> you filipino out</p>
+                  <p class="yt-suggest-user">Jayz</p>
+                  <p class="yt-suggest-views">135K views &middot; 1 year ago</p>
+                </div>
+              </div>
+            </a>
+
+            <a href="https://youtu.be/nGQTSmywOlg?si=E_PQ4vPNqD0z9duD">
+              <div class="vid-container">
+                <img class="vid" src="hq720 (11).png">
+                <div class="vid-time">1:04:56</div>
+                <div class="text-container">
+                  <p class="yt-suggest-title">When you need to relax your<br>mind</p>
+                  <p class="yt-suggest-user">Heaven Cozy</p>
+                  <p class="yt-suggest-views">4.5K views &middot; 1 day ago</p>
+                </div>
+              </div>
+            </a>
+          
+        </div>
+        
+      </div>
+  
+    </div>
+    
+    <div class="yt-header">
+      <div class="left-header">
+        <div class="tooltip-container">
+          <i class="fa fa-bars" style="font-size: 20px; color: white;"></i>
+          <img class="youtube-logo" style="cursor: pointer;" src="youtube logo.png" onclick="redirectToHome()">
+        </div>
+      </div>
+      <div class="middle-header">
+        <input class="yt-search" type="text" placeholder="Search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <div class="tooltip-container">
+          <img class="fa-microphone" src="Untitled design (13).png">
+          <p class="tooltip">Search with your voice</p>
+        </div>
+      </div>
+      <div class="right-header">
+        <div class="tooltip-container">
+          <img class="fa-video" src="Untitled design (15).png" id="create-img" onclick="toggleDropdown()">
+          <p class="tooltip">Create</p>
+          <!-- Dropdown content for Create -->
+          <div class="dropdown-content-create" id="create-dropdown">
+            <a class="c-d" href="javascript:void(0)" onclick="redirectToCreate()">Upload video</a>
+            <a class="c-d">Go live</a>
+          </div>
+        </div>        
+        <div class="tooltip-container">
+          <img class="fa-bell" src="Untitled design (14).png">
+          <p class="tooltip">Notifications</p>
+        </div>
+        <div class="tooltip-container profile-dropdown-container">
+          <img class="profile-logo" src="profilelogo.png" id="profile-img">
+          <p class="tooltip">Profile</p>
+          <!-- Dropdown content -->
+          <div class="dropdown-content" id="profile-dropdown">
+            <div class="container-p">
+              <div class="profile-info">
+                <div class="img-drop">
+                  <img style="width: 50px; border-radius: 50%;" src="profilelogo.png">
+                </div>
+                <div class="name-drop">
+                  <p id="user-full-name">Loading...</p>
+                  <p id="user-username">@loading</p>
+                  <a href="javascript:void(0)" onclick="redirectToProfile()" style="color: rgb(79, 149, 255); font-family: Arial, Helvetica, sans-serif;">View your channel</a>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <p>Google Account</p>
+            <p>Switch account</p>
+            <p><a href="../Youtube login/logout.php" style="color: white;">Sign out</a></p>
+
+            <hr>
+            <p>Youtube Studio</p>
+            <p>Purchases and memberships</p>
+            <hr>
+            <p>Your data in YouTube</p>
+            <p>Appearance: Device theme</p>
+            <p>Language: English</p>
+            <p>Restricted Mode: Off</p>
+            <p>Location: Philippines</p>
+            <p>Keyboard shortcuts</p>
+            <hr>
+            <p>Settings</p>
+            <hr>
+            <p>Help</p>
+            <p>Send feedback</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+
+    <script src="function.js"></script>
+    <script>
+      // Get the profile image and dropdown content
+ var profileImg = document.getElementById("profile-img");
+ var dropdownContent = document.getElementById("profile-dropdown");
+ 
+ // Toggle the dropdown content when the profile image is clicked
+ profileImg.addEventListener("click", function() {
+   dropdownContent.classList.toggle("show");
+ });
+ 
+ // Close the dropdown when clicking outside of it
+ window.addEventListener("click", function(event) {
+   if (!event.target.matches('#profile-img')) {
+     var dropdowns = document.getElementsByClassName("dropdown-content");
+     for (var i = 0; i < dropdowns.length; i++) {
+       var openDropdown = dropdowns[i];
+       if (openDropdown.classList.contains("show")) {
+         openDropdown.classList.remove("show");
+       }
+     }
+   }
+ });
+ 
+ 
+ function toggleDropdown() {
+   var dropdown = document.getElementById("create-dropdown");
+   if (dropdown.style.display === "none" || dropdown.style.display === "") {
+     dropdown.style.display = "block";
+   } else {
+     dropdown.style.display = "none";
+   }
+ }
+ 
+ 
+ window.onclick = function(event) {
+   if (!event.target.matches('#create-img')) {
+     var dropdowns = document.getElementsByClassName("dropdown-content-create");
+     for (var i = 0; i < dropdowns.length; i++) {
+       var openDropdown = dropdowns[i];
+       if (openDropdown.style.display === "block") {
+         openDropdown.style.display = "none";
+       }
+     }
+   }
+ }
+ 
+ function redirectToWatch() {
+      window.location.href = "../Youtube watch/youtube.html";
+      return false;
+    }
+
+    function redirectToCreate() {
+      window.location.href = "../Youtube Create/index.html";
+      return false;
+    }
+
+    function redirectToProfile() {
+      window.location.href = "../Youtube Profile/index.html";
+      return false;
+    }
+
+    function redirectToLogin() {
+      window.location.href = "../Youtube login/login.php";
+      return false
+      
+    }
+    function redirectToHome() {
+  window.location.href = "../Youtube Home/home.html";
+  return false;
+}
+
+function updateUserInfoDisplay() {
+    fetch('getUserInfo.php')
+        .then(response => response.json())
+        .then(data => {
+            console.log('Fetched data:', data); // Log the fetched data for debugging
+            if (data.error) {
+                console.error(data.error);
+            } else {
+                document.getElementById('user-full-name').textContent = data.fullName;
+                document.getElementById('user-username').textContent = `@${data.username}`;
+            }
+        })
+        .catch(error => console.error('Error fetching user info:', error));
+}
+
+window.onload = updateUserInfoDisplay;
+
+document.getElementById('commentInput').addEventListener('focus', function() {
+  document.getElementById('commentButton').style.display = 'block';
+  document.getElementById('cancelButton').style.display = 'block';
+});
+
+document.getElementById('commentButton').addEventListener('click', function() {
+  const commentText = document.getElementById('commentInput').value;
+  if (commentText.trim() !== '') {
+    const commentSection = document.getElementById('commentSection');
+
+    const newComment = document.createElement('div');
+    newComment.className = 'commentcontainer';
+    newComment.innerHTML = `
+      <div class="commentprofile">
+        <img class="commentuserprofile" src="profilelogo.png">
+      </div>
+      <div class="c-comment">
+        <div class="commentname">
+          <div class="commentuser">
+            <p style="font-weight: bold;" class="c-user">${document.getElementById('user-username').textContent}</p>
+          </div>
+          <div class="commenttime">
+            <p style="color: rgb(94, 94, 94); margin-left: 15px; font-size: 13px;" class="c-time">Just now</p>
+          </div>
+        </div>
+        <div class="commentinfo">
+          <p class="c-info">${commentText}</p>
+        </div>
+        <div class="like-dislike">
+          <img style="width: 20px;" src="Untitled design (21).png">
+          <p>0</p>
+          <img style="width: 20px;" src="Untitled design (22).png">
+          <p style="font-weight: bold; font-size: 13px; margin-left: 20px;">Reply</p>
+        </div>
+      </div>
+    `;
+
+    commentSection.insertBefore(newComment, commentSection.firstChild);
+
+    // Update comment count
+    const commentCount = document.getElementById('commentCount');
+    const currentCount = parseInt(commentCount.textContent.split(' ')[0]);
+    commentCount.textContent = `${currentCount + 1} Comments`;
+
+    // Clear the input field
+    document.getElementById('commentInput').value = '';
+    document.getElementById('commentButton').style.display = 'none';
+    document.getElementById('cancelButton').style.display = 'none';
+  }
+});
+
+document.getElementById('cancelButton').addEventListener('click', function() {
+  document.getElementById('commentInput').value = ''; // Clear the input field
+  document.getElementById('commentButton').style.display = 'none';
+  document.getElementById('cancelButton').style.display = 'none';
+});
+
+
+     </script>
+  </body>
+</html>

@@ -1,0 +1,129 @@
+.description {
+  background-color: rgb(39, 39, 39);
+  margin-top: 15px;
+  border-radius: 20px;
+}
+
+.description p {
+  color: rgb(255, 255, 255);
+  margin-left: 15px;
+  font-size: 14px;
+}
+
+.commentuserprofile {
+  width: 45px;
+  border-radius: 50%;
+}
+
+.commentcontainer {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.commentprofile {
+  margin-right: 10px;
+}
+
+.c-comment {
+  display: flex;
+  flex-direction: column;
+}
+
+.commentname {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.commentuser,
+.commenttime {
+  margin: 0;
+}
+
+.user-time-container {
+  display: flex; /* Use flexbox to align items horizontally */
+  align-items: center; /* Align items vertically */
+}
+
+
+.commentinfo {
+  margin: 10px 0;
+}
+
+.like-dislike {
+  display: flex;
+  align-items: center;
+}
+
+.like-dislike img {
+  margin-right: 5px;
+}
+
+.like-dislike p {
+  margin: 0 5px 0 0;
+}
+
+.c-user, .c-time, .c-info {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.commentsec p {
+  font-size: 15px;
+  color: white;
+}
+
+.usercomment {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+
+
+.userprofile {
+  margin-right: 10px;
+}
+
+.u-comment {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.u-top {
+  display: flex;
+  align-items: center;
+}
+
+.u-bottom {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.u-comment input {
+  flex: 1; /* This will make the input fill the available space */
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.u-can{
+  background-color: transparent;
+   color: white; 
+   font-weight: bold;
+    border: none; 
+    width: 90px; 
+    height: 30px; 
+    font-size: 15px; 
+    border-radius: 20px;
+     margin-top: 10px; 
+     margin-right: 10px; 
+     cursor: pointer;
+}
+
+.u-can:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Change background color on hover */
+  color: #fff; /* Change text color on hover */
+}
