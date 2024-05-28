@@ -1,0 +1,230 @@
+.container{
+  display: flex;
+}
+.video-area {
+  margin-left: 10.5%;
+  margin-top: 2.5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-vid {
+  height: 440px;
+  width: 680px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.vid-user {
+  display: inline-block;
+  height: 35px;
+  width: 35px; 
+  border-radius: 22.5px;
+  top: -50px;
+}
+
+.vid-info{
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.vid-title{
+  font-family: arial;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.like-button,
+.dislike-button, .share-button, .menu-button, .sub{
+  background-color: #0f0f0f;
+  width: 70px;
+  height: 30px;
+  display: inline-block;
+}
+.button-icon {
+  width: 50px; 
+  height: 20px; 
+}
+
+.username, 
+.subs{
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: arial;
+  
+}
+
+.username{
+  color: white;
+  font-weight: bold;
+}
+
+.subs{
+  color: grey;
+  font-size: 12px;
+}
+
+.user-info{
+  display:inline-block;
+  margin-left: 3px;
+  
+}
+
+.sub{
+  margin-left: 20px;
+  height: 30px;
+
+}
+
+.video-buttons{
+  position: absolute;
+  top: 405px;
+  padding-left: 30px;
+  
+}
+
+
+.prog {
+  position: absolute;
+  top: 390px;
+  left: 0;
+  width: 100%;
+  background-color: grey;
+  height: 2px; 
+  border-radius: 5px;
+  z-index: 2; 
+}
+
+.prog::-webkit-progress-value {
+  background-color: red;
+}
+
+.sub{
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: none;
+  height: 35px;
+  width: 100px;
+  border-radius: 35px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: backgound-color 0.3s;
+}
+
+.sub:hover{
+  background-color: rgb(219, 219, 219);
+}
+
+.menu-button{
+  font-size: 12px;
+  background-color: #2c2c2c;
+  color: white;
+  border: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 35px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 2px;
+}
+
+.menu-button:hover{
+  background-color: rgb(68, 68, 68);
+}
+
+.share-button{
+  font-size: 12px;
+  background-color: #2c2c2c;
+  color: white;
+  border: none;
+  width: 85px;
+  height: 35px;
+  border-radius: 35px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 5px;
+}
+
+.share-button:hover{
+  background-color: rgb(68, 68, 68);
+}
+
+.dl-button{
+  font-size: 12px;
+  background-color: #2c2c2c;
+  color: white;
+  border: none;
+  width: 100px;
+  height: 35px;
+  border-radius: 35px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 5px;
+}
+
+.dl-button:hover{
+  background-color: rgb(68, 68, 68);
+}
+
+.dislike-button{
+  font-size: 12px;
+  background-color: #2c2c2c;
+  color: white;
+  border: none;
+  width: 65px;
+  height: 35px;
+  margin-left: -30px;
+  border-radius: 35px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  z-index: 1;
+  position: relative;
+  
+}
+
+.dislike-button:hover{
+  background-color: rgb(68, 68, 68);
+}
+
+
+.like-button{
+  font-size: 12px;
+  background-color: #2c2c2c;
+  color: white;
+  border: none;
+  width: 60px;
+  padding-right: 60px;
+  height: 35px;
+  border-radius: 35px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  z-index: 2;
+  position: relative;
+  margin-left: 48px;
+}
+
+.like-button:hover{
+  background-color: rgb(68, 68, 68);
+}
+
+.vertical-line {
+  height:20px;
+  width: 0; 
+  border-left: 1px solid rgb(255, 255, 255); 
+  display: inline-block; 
+  margin-left: -8px;
+  position: relative;
+  z-index: 3;
+}
+
+
+.yt-info {
+  display: flex;
+  align-items: center;
+}
+
+

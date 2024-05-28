@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Youtube</title>
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="hover.css">
+  <link rel="stylesheet" href="drop.css">
+  <link rel="stylesheet" href="drop2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body class="youtube-bg">
+  <div class="yt-header">
+    <div class="left-header">
+      <div class="tooltip-container">
+        <i class="fa fa-bars" style="font-size: 20px; color: white;"></i>
+        <img class="youtube-logo" style="cursor: pointer;" src="youtube logo.png" onclick="redirectToHome()">
+      </div>
+    </div>
+    <div class="middle-header">
+      <input class="yt-search" type="text" placeholder="Search">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <div class="tooltip-container">
+        <img class="fa-microphone" src="Untitled design (13).png">
+        <p class="tooltip">Search with your voice</p>
+      </div>
+    </div>
+    <div class="right-header">
+      <div class="tooltip-container">
+        <img class="fa-video" src="Untitled design (15).png" id="create-img" onclick="toggleDropdown()">
+        <p class="tooltip">Create</p>
+        <!-- Dropdown content for Create -->
+        <div class="dropdown-content-create" id="create-dropdown">
+          <a class="c-d" href="javascript:void(0)" onclick="redirectToCreate()">Upload video</a>
+          <a class="c-d">Go live</a>
+        </div>
+      </div>
+      <div class="tooltip-container">
+        <img class="fa-bell" src="Untitled design (14).png">
+        <p class="tooltip">Notifications</p>
+      </div>
+      <div class="tooltip-container profile-dropdown-container">
+        <img class="profile-logo" src="profilelogo.png" id="profile-img">
+        <p class="tooltip">Profile</p>
+        <!-- Dropdown content -->
+        <div class="dropdown-content" id="profile-dropdown">
+          <div class="container-p">
+            <div class="profile-info">
+              <div class="img-drop">
+                <img style="width: 50px; border-radius: 50%;" src="profilelogo.png">
+              </div>
+              <div class="name-drop">
+                <p id="user-full-name">Loading...</p>
+                <p id="user-username">@loading</p>
+                <a href="javascript:void(0)" onclick="redirectToProfile()" style="color: rgb(79, 149, 255); font-family: Arial, Helvetica, sans-serif;">View your channel</a>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <p>Google Account</p>
+          <p>Switch account</p>
+          <p><a href="../Youtube login/logout.php" style="color: white;">Sign out</a></p>
+
+          <hr>
+          <p>Youtube Studio</p>
+          <p>Purchases and memberships</p>
+          <hr>
+          <p>Your data in YouTube</p>
+          <p>Appearance: Device theme</p>
+          <p>Language: English</p>
+          <p>Restricted Mode: Off</p>
+          <p>Location: Philippines</p>
+          <p>Keyboard shortcuts</p>
+          <hr>
+          <p>Settings</p>
+          <hr>
+          <p>Help</p>
+          <p>Send feedback</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="yt-sidebar">
+    <div class="c-sidebar">
+      <img class="s-sidebar" src="Untitled design (2).png" onclick="redirectToHome()">
+      <p class="s-p">Home</p>
+    </div>
+    <div class="c-sidebar">
+      <img class="s-sidebar" src="Untitled design (5).png">
+      <p class="s-p">Shorts</p>
+    </div>
+    <div class="c-sidebar">
+      <img class="s-sidebar" src="Untitled design (4).png">
+      <p class="s-p">Subscription</p>
+    </div>
+    <div class="c-sidebar">
+      <img class="s-sidebar" src="Untitled design (3).png">
+      <p class="s-p">You</p> 
+    </div>
+  </div>
+
+  <div class="sidebar-buttons-container">
+    <div class="main-buttons">
+      <button class="main-btn-default">All</button>
+      <button class="main-btn">Gaming</button>
+      <button class="main-btn">Music</button>
+      <button class="main-btn">Mixes</button>
+      <button class="main-btn">Audio commentaries</button>
+      <button class="main-btn">Algebra</button>
+      <button class="main-btn">Live</button>
+      <button class="main-btn">Video game music</button>
+      <button class="main-btn">Computer Science</button>
+      <button class="main-btn">J-Pop</button>
+      <button class="main-btn">Free music</button>
+      <button class="main-btn">Dramedy</button>
+      <button class="main-btn">Action-adventure games</button>
+      <button class="main-btn">Art</button>
+      <button class="main-btn">Comedy</button>
+      <button class="main-btn">Recently uploaded</button>
+      <button class="main-btn">Watched</button>
+      <button class="main-btn">New to you</button>
+    </div>
+  </div>
+
+  <div class="yt-main">
+    <div class="yt-main-container" onclick="redirectToWatch()">
+      <div class="thumbnail-row">
+        <div class="yt-vid-container">
+          <img class="thumbnail" src="hq720 (13).png">
+          <p class="time">0:35</p>
+        </div>
+      </div>
+      <div>
+        <div class="channel-picture">
+          <img class="profilepic" src="b85f3a28fd572685b0dab45537113294.jpg">
+        </div>
+        <div class="video-info">
+          <p class="video-title" style="color: white; font-size: 15px;">
+            Dancing Cockroach on Stage
+          </p>
+          <p class="video-author" style="color: rgb(156, 156, 156); font-size: 13px;">
+            t i n a t a n g i
+          </p>
+          <p class="video-stats" style="color: rgb(156, 156, 156); font-size: 13px;">
+            148K views &#183; 7 months ago
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="yt-main-container" onclick="redirectToWatch()">
+      <div class="thumbnail-row">
+        <div class="yt-vid-container">
+          <img class="thumbnail" src="hq720 (2).png">
+          <p class="time">1:19:20</p>
+        </div>
+      </div>
+      <div>
+        <div class="channel-picture">
+          <img class="profilepic" src="unnamed (2).png">
+        </div>
+        <div class="video-info">
+          <p class="video-title" style="color: white; font-size: 15px;">
+           THIS IS THE DARK SOULS OF COOKING GAMES & <br> I NEED TO COOK PERFECT EGGS
+          </p>
+          <p class="video-author" style="color: rgb(156, 156, 156); font-size: 13px;">
+            Kubz Scouts
+          </p>
+          <p class="video-stats" style="color: rgb(156, 156, 156); font-size: 13px;">
+            152K views &#183; 13 hours ago
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="yt-main-container" onclick="redirectToWatch()">
+      <div class="thumbnail-row">
+        <div class="yt-vid-container">
+          <img class="thumbnail" src="hq720 (3).png">
+          <p class="time">2:56</p>
+        </div>
+      </div>
+      <div>
+        <div class="channel-picture">
+          <img class="profilepic" src="channels4_profile(3).png">
+        </div>
+        <div class="video-info">
+          <p class="video-title" style="color: white; font-size: 15px;">
+            Sabrina Carpenter - Expresso (Official Audio)
+          </p>
+          <p class="video-author" style="color: rgb(156, 156, 156); font-size: 13px;">
+            Sabrina Carpenter
+          </p>
+          <p class="video-stats" style="color: rgb(156, 156, 156); font-size: 13px;">
+            9.5M views &#183; 1 months ago
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="yt-main-container" onclick="redirectToWatch()">
+      <div class="thumbnail-row">
+        <div class="yt-vid-container">
+          <img class="thumbnail" src="hq720 (4).png">
+          <p class="time">47:02</p>
+        </div>
+      </div>
+      <div>
+        <div class="channel-picture">
+          <img class="profilepic" src="channels4_profile(4).png">
+        </div>
+        <div class="video-info">
+          <p class="video-title" style="color: white; font-size: 15px;">
+            <i>lovecore/hopeless romantic playlist</i>
+          </p>
+          <p class="video-author" style="color: rgb(156, 156, 156); font-size: 13px;">
+            lazydaez
+          </p>
+          <p class="video-stats" style="color: rgb(156, 156, 156); font-size: 13px;">
+            246K views &#183; 4 weeks ago
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="yt-main-container" onclick="redirectToWatch()">
+      <div class="thumbnail-row">
+        <div class="yt-vid-container">
+          <img class="thumbnail" src="hq720 (5).png">
+          <p class="time">5:16:54</p>
+        </div>
+      </div>
+      <div>
+        <div class="channel-picture">
+          <img class="profilepic" src="unnamed (5).png">
+        </div>
+        <div class="video-info">
+          <p class="video-title" style="color: white; font-size: 15px;">
+            Full Animal Crossing Soundtrack
+          </p>
+          <p class="video-author" style="color: rgb(156, 156, 156); font-size: 13px;">
+            clmdwn ambiance
+          </p>
+          <p class="video-stats" style="color: rgb(156, 156, 156); font-size: 13px;">
+            2.3M views &#183; 4 years ago
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="yt-main-container" onclick="redirectToWatch()">
+      <div class="thumbnail-row">
+        <div class="yt-vid-container">
+          <img class="thumbnail" src="hq720 (6).png">
+          <p class="time">6:05</p>
+        </div>
+      </div>
+      <div>
+        <div class="channel-picture">
+          <img class="profilepic" src="channels4_profile(6).png">
+        </div>
+        <div class="video-info">
+          <p class="video-title" style="color: white; font-size: 15px;">
+            Bamban Mayor: My biological mother is a Filipino,<br> I am a Filipino | ANC 
+          </p>
+          <p class="video-author" style="color: rgb(156, 156, 156); font-size: 13px;">
+            ANC 24/7
+          </p>
+          <p class="video-stats" style="color: rgb(156, 156, 156); font-size: 13px;">
+            5.7K views &#183; 2 hours ago
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="yt-main-container" onclick="redirectToWatch()">
+      <div class="thumbnail-row">
+        <div class="yt-vid-container">
+          <img class="thumbnail" src="hq720 (7).png">
+          <p class="time">33:26</p>
+        </div>
+      </div>
+      <div>
+        <div class="channel-picture">
+          <img class="profilepic" src="channels4_profile(7).png">
+        </div>
+        <div class="video-info">
+          <p class="video-title" style="color: white; font-size: 15px;">
+            pov: u start loving yourself
+          </p>
+          <p class="video-author" style="color: rgb(156, 156, 156); font-size: 13px;">
+            Julley Nicole
+          </p>
+          <p class="video-stats" style="color: rgb(156, 156, 156); font-size: 13px;">
+            2.9M views &#183; 1 year ago
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="yt-main-container" onclick="redirectToWatch()">
+      <div class="thumbnail-row">
+        <div class="yt-vid-container">
+          <img class="thumbnail" src="hq720 (8).png">
+          <p class="time">35:43</p>
+        </div>
+      </div>
+      <div>
+        <div class="channel-picture">
+          <img class="profilepic" src="channels4_profile(8).png">
+        </div>
+        <div class="video-info">
+          <p class="video-title" style="color: white; font-size: 15px;">
+            Sped up songs to vibe/dance to
+          </p>
+          <p class="video-author" style="color: rgb(156, 156, 156); font-size: 13px;">
+            Aliven't
+          </p>
+          <p class="video-stats" style="color: rgb(156, 156, 156); font-size: 13px;">
+            153K views &#183; 2 months ago
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="yt-main-container" onclick="redirectToWatch()">
+      <div class="thumbnail-row">
+        <div class="yt-vid-container">
+          <img class="thumbnail" src="hq720 (9).png">
+          <p class="time">1:04:31</p>
+        </div>
+      </div>
+      <div>
+        <div class="channel-picture">
+          <img class="profilepic" src="channels4_profile(9).png">
+        </div>
+        <div class="video-info">
+          <p class="video-title" style="color: white; font-size: 15px;">
+            Here With Me
+          </p>
+          <p class="video-author" style="color: rgb(156, 156, 156); font-size: 13px;">
+            Slow + Reverb
+          </p>
+          <p class="video-stats" style="color: rgb(156, 156, 156); font-size: 13px;">
+            49K views &#183; 1 year ago
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="yt-main-container" onclick="redirectToWatch()">
+      <div class="thumbnail-row">
+        <div class="yt-vid-container">
+          <img class="thumbnail" src="hqdefault(10).png">
+          <p class="time">35:89</p>
+        </div>
+      </div>
+      <div>
+        <div class="channel-picture">
+          <img class="profilepic" src="channels4_profile(10).png">
+        </div>
+        <div class="video-info">
+          <p class="video-title" style="color: white; font-size: 15px;">
+            filipino songs to scream you filipino out
+          </p>
+          <p class="video-author" style="color: rgb(156, 156, 156); font-size: 13px;">
+            Jayz
+          </p>
+          <p class="video-stats" style="color: rgb(156, 156, 156); font-size: 13px;">
+            135K views &#183; 1 year ago
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="yt-main-container" onclick="redirectToWatch()">
+      <div class="thumbnail-row">
+        <div class="yt-vid-container">
+          <img class="thumbnail" src="hq720 (11).png">
+          <p class="time">1:04:56</p>
+        </div>
+      </div>
+      <div>
+        <div class="channel-picture">
+          <img class="profilepic" src="channels4_profile(11).png">
+        </div>
+        <div class="video-info">
+          <p class="video-title" style="color: white; font-size: 15px;">
+            When you need to relax your mind.(minecraft music)
+          </p>
+          <p class="video-author" style="color: rgb(156, 156, 156); font-size: 13px;">
+            Heaven Cozy
+          </p>
+          <p class="video-stats" style="color: rgb(156, 156, 156); font-size: 13px;">
+            4.5K views &#183; 1 day ago
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="yt-main-container" onclick="redirectToWatch()">
+      <div class="thumbnail-row">
+        <div class="yt-vid-container">
+          <img class="thumbnail" src="hq720 (12).png">
+          <p class="time">40:28</p>
+        </div>
+      </div>
+      <div>
+        <div class="channel-picture">
+          <img class="profilepic" src="channels4_profile(12).png">
+        </div>
+        <div class="video-info">
+          <p class="video-title" style="color: white; font-size: 15px;">
+            POV: Vibing Alone (Playlist)
+          </p>
+          <p class="video-author" style="color: rgb(156, 156, 156); font-size: 13px;">
+            JoeyBiv99
+          </p>
+          <p class="video-stats" style="color: rgb(156, 156, 156); font-size: 13px;">
+            73K views &#183; 3 weeks ago
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="function.js"></script>
+  <script>
+    // Get the profile image and dropdown content
+    var profileImg = document.getElementById("profile-img");
+    var dropdownContent = document.getElementById("profile-dropdown");
+
+    // Toggle the dropdown content when the profile image is clicked
+    profileImg.addEventListener("click", function() {
+      dropdownContent.classList.toggle("show");
+    });
+
+    // Close the dropdown when clicking outside of it
+    window.addEventListener("click", function(event) {
+      if (!event.target.matches('#profile-img')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        for (var i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains("show")) {
+            openDropdown.classList.remove("show");
+          }
+        }
+      }
+    });
+
+    function toggleDropdown() {
+      var dropdown = document.getElementById("create-dropdown");
+      if (dropdown.style.display === "none" || dropdown.style.display === "") {
+        dropdown.style.display = "block";
+      } else {
+        dropdown.style.display = "none";
+      }
+    }
+
+    // Optional: Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('#create-img')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content-create");
+        for (var i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.style.display === "block") {
+            openDropdown.style.display = "none";
+          }
+        }
+      }
+    }
+
+  
+
+
+    // Redirection functions
+    function redirectToWatch() {
+      window.location.href = "../Youtube watch/youtube.html";
+      return false;
+    }
+
+    function redirectToCreate() {
+      window.location.href = "../Youtube Create/index.html";
+      return false;
+    }
+
+    function redirectToProfile() {
+      window.location.href = "../Youtube Profile/index.html";
+      return false;
+    }
+
+    function redirectToLogin() {
+    window.location.href = "../Youtube login/login.php";
+    return false;
+}
+
+    function redirectToHome() {
+  window.location.href = "../Youtube Home/home.html";
+  return false;
+}
+
+function updateUserInfoDisplay() {
+    fetch('getUserInfo.php')
+        .then(response => response.json())
+        .then(data => {
+            console.log('Fetched data:', data); // Log the fetched data for debugging
+            if (data.error) {
+                console.error(data.error);
+            } else {
+                document.getElementById('user-full-name').textContent = data.fullName;
+                document.getElementById('user-username').textContent = '@' + data.username;
+            }
+        })
+        .catch(error => console.error('Error fetching user info:', error));
+}
+
+window.onload = updateUserInfoDisplay;
+
+
+
+  </script>
+</body>
+</html>
