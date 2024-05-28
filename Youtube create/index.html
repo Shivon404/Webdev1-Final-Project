@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Youtube Creator</title>
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="sidebar.css">
+  <link rel="stylesheet" href="drop.css">
+  <link rel="stylesheet" href="drop2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body class="youtube-bg">
+  <div class="yt-header">
+    <div class="left-header">
+      <i class="fa fa-bars" style="font-size: 20px; color: white;"></i>
+      <img class="youtube-logo" src="studio.png">
+    </div>
+    <div class="middle-header">
+      <input class="yt-search" type="text" placeholder="Search across your channel">
+    </div>
+    <div class="right-header">
+      <img class="fa-video" src="Untitled design (18).png">
+      <div class="tooltip-container">
+        <img class="fa-video" src="Untitled design (19).png" id="create-img" onclick="triggerFileInput()">
+        <!-- Dropdown content for Create -->
+        <div class="dropdown-content-create" id="create-dropdown">
+          <a class="c-d">Upload videos</a>
+          <a class="c-d">Go live</a>
+          <a class="c-d">New playlist</a>
+          <a class="c-d">New podcast</a>
+        </div>
+      </div>  
+      <div class="tooltip-container profile-dropdown-container">
+        <img class="profile-logo" src="profilelogo.png" id="profile-img">
+       
+        <!-- Dropdown content -->
+        <div class="dropdown-content" id="profile-dropdown">
+          <div class="container-p">
+            <div class="profile-info">
+              <div class="img-drop">
+                <img style="width: 50px; border-radius: 50%;" src="profilelogo.png">
+              </div>
+              <div class="name-drop">
+                <p id="user-full-name">Loading...</p>
+                <p id="user-username">@loading</p>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <p id="your-channel">Your channel</p>
+          <p id="youtube">YouTube</p>
+          <p id="switch-account">Switch account</p>
+          <p id="sign-out"><a href="../Youtube login/logout.php" style="color: white;">Sign out</a></p>
+
+
+          <hr>
+          <p>Appearance: Device theme</p>
+          <p>Send feedback</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="yt-sidebar">
+    <div class="uppersidebar">
+      <img class="profile-logo-sidebar" src="profilelogo.png" alt="Profile Logo">
+      <p style="color: white; font-weight: bold; margin-top: 10px; font-size: 18px;">Your channel</p>
+      <p id="profile-full-name" style="color: white;">Loading...</p>
+    </div>
+    <div class="middlesidebar">
+      <button>Dashboard</button>
+      <button style="color: rgb(255, 42, 42); border-left: 10px solid rgb(255, 42, 42); background-color: rgb(27, 27, 27);">Content</button>
+      <button>Analytics</button>
+      <button>Comments</button>
+      <button>Subtitles</button>
+      <button>Copyright</button>
+      <button>Earn</button>
+      <button>Customization</button>
+      <button>Audio library</button>
+    </div>
+    <div class="lowersidebar">
+      <button style="margin-left: 10px;">Settings</button>
+      <button style="margin-left: 10px;">Send Feedback</button>
+    </div>
+  </div>
+
+  <div class="main">
+    <p style="color: white; font-size: 25px; font-weight: bold; padding-left: 25px; padding-top: 20px; padding-bottom: 20px;">Channel content</p>
+  
+    <div class="button-group">
+      <button style="color: rgb(51, 157, 255); border-bottom: 4px solid rgb(51, 157, 255);">Videos</button>
+      <button>Short</button>
+      <button>Live</button>
+      <button>Playlist</button>
+      <button>Podcast</button>
+      <button>Promotion</button>
+    </div>
+  
+    <p style="padding-left: 20px; color: rgb(109, 109, 109); font-size: 14.5px;">Filter</p>
+  
+    
+    <div class="filters">
+      <div class="filter-left">
+        <p style="color: rgb(192, 192, 192); padding-left: 20px;">Video</p>
+      </div>
+      <div class="vertical-line"></div>
+      <div class="filter-right">
+        <p>Visibility</p>
+        <p>Restrictions</p>
+        <p>Date</p>
+        <p>Views</p>
+        <p>Comments</p>
+        <p>Likes (vs. dislikes)</p>
+      </div>
+    </div>
+
+    <!--Default-->
+    <div class="below-container" id="below-container">
+      <div class="b-container">
+        <img class="b-image" src="Untitled design (20).png">
+      </div>
+      <div class="b-name-container">
+        <p class="b-text">No content available</p>
+        <button class="b-button" style="background-color: rgb(51, 157, 255);" onclick="triggerFileInput()">UPLOAD VIDEOS</button>
+        <input type="file" id="videoInput" accept="video/*" style="display: none;" onchange="handleVideoUpload(event)">
+      </div>
+    </div>
+    
+    <div class="video-container" id="video-container">
+      <div class="v-container-wrapper">
+        <div class="v-left-container">
+          <div class="v-container">
+            <video id="uploaded-video" controls class="v-thumbnail"></video>
+            <p class="v-time">1:03</p>
+          </div>
+          <div class="v-name-container">
+            <p id="video-title" class="v-title">Title</p>
+            <p class="v-description">Add description</p>
+          </div>
+        </div>
+        <div class="v-right-container">
+          <p style="margin-right: 20px;">Public</p>
+          <p style="margin-right: 10px;">Copyright</p>
+          <p style="margin-right: 10px;">May 28, 2024</p>
+          <p style="margin-right: 65px;">0</p>
+          <p style="margin-right: 110px;">0</p>
+          <p>-</p>
+        </div>
+      </div>
+    
+      <div class="below-v">
+        <p>Rows per page:</p>
+        <p style="color: white; font-weight: bold;">30</p>
+        <p>1-2 of 2</p>
+        <p>|<</p>
+        <p><</p>
+        <p>></p>
+        <p>>|</p>
+      </div>
+    </div>
+
+    
+    
+  </div>
+
+  <script src="function.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+    fetchUserInfo();
+
+
+    var profileImg = document.getElementById("profile-img");
+    var dropdownContent = document.getElementById("profile-dropdown");
+
+    
+    profileImg.addEventListener("click", function(event) {
+      event.stopPropagation(); 
+      dropdownContent.classList.toggle("show");
+    });
+
+    
+    document.getElementById("your-channel").addEventListener("click", redirectToProfile);
+
+    
+    document.getElementById("youtube").addEventListener("click", redirectToHome);
+
+    
+    document.getElementById("sign-out").addEventListener("click", redirectToLogin);
+  });
+
+  
+  function toggleCreateDropdown(event) {
+    event.stopPropagation(); // Prevent the event from bubbling up
+    var dropdown = document.getElementById("create-dropdown");
+    dropdown.classList.toggle("show");
+  }
+
+  function triggerFileInput() {
+    document.getElementById('videoInput').click();
+  }
+
+  function handleVideoUpload(event) {
+    const file = event.target.files[0];
+    if (file) {
+      const videoURL = URL.createObjectURL(file);
+      const videoTitle = file.name;
+
+      // Update the video source and title
+      const uploadedVideo = document.getElementById('uploaded-video');
+      uploadedVideo.src = videoURL;
+
+      const videoTitleElement = document.getElementById('video-title');
+      videoTitleElement.textContent = videoTitle;
+
+      // Hide the below-container and show the video-container
+      document.getElementById('below-container').style.display = 'none';
+      document.getElementById('video-container').style.display = 'block';
+    }
+  }
+
+  function fetchUserInfo() {
+    fetch('getUserInfo.php')
+      .then(response => response.json())
+      .then(data => {
+        // Update user information in profile elements
+        document.getElementById("user-full-name").textContent = data.fullName;
+        document.getElementById("user-username").textContent = "@" + data.username;
+        document.getElementById("profile-full-name").textContent = data.fullName;
+      })
+      .catch(error => console.error('Error fetching user information:', error));
+  }
+
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('#create-img')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content-create");
+      for (var i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+
+    if (!event.target.matches('#profile-img')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      for (var i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+
+  function redirectToWatch() {
+      window.location.href = "../Youtube watch/youtube.html";
+      return false;
+    }
+
+    function redirectToCreate() {
+      window.location.href = "../Youtube Create/index.html";
+      return false;
+    }
+
+    function redirectToProfile() {
+      window.location.href = "../Youtube Profile/index.html";
+      return false;
+    }
+
+    function redirectToLogin() {
+    window.location.href = "../Youtube login/login.php";
+    return false;
+}
+
+    function redirectToHome() {
+  window.location.href = "../Youtube Home/home.html";
+  return false;
+}
+
+  
+    </script>
+  
+</body>
+</html>
